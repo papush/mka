@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mystika</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+      <a href="index.htm"><img src="img/avatar.png" alt=header width="300px" height="auto" style="margin:0"></a>
+    </header>
+    <hr style="color:#99F902">
+    <nav style="font-family:sans;font-size:130%">
+        <ul>
+            <a href="lugar.htm"><li>Lugar</li></a>
+            <a href="ritual.htm"><li>Ritual</li></a>
+            <a href="galeria.htm"><li>Galería</li></a>
+          </ul>
+    </nav>
+
+
+<div align=center>
+  <div class="container">
+    <section>
+      <h1>Lugar</h1>
+        <p>por el momento el lugar no se ha definido. Sin embargo existen varias opciones:</p>
+        <ul>
+          <li><p>La ventolera - Escazu</p></li>
+          <li><p>Monte Redondo - Grecia</p></li>
+        </ul>
+        <p>Cuando se tome la decisión se enviará un comunicado por todos los medios posibles</p>
+        <p>De la misma manera tendremos aqui la direccion y las coordenadas para poder llegar a traves de waze, google maps u otros servicios de geolocalizacion</p>
+    </section>
+  </div>
+</div>
+
+<div hidden class="footer">
+  <p><a class="link" href="Mystika.apk" style="font-size:120%"> Descargar App</a>mystika@tutamail.com</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</body>
+</html>

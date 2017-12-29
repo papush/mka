@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mystika</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+      <a href="index.htm"><img src="img/avatar.png" alt=header width="300px" height="auto" style="margin:0"></a>
+    </header>
+    <hr style="color:#99F902">
+    <nav style="font-family:sans;font-size:130%">
+        <ul>
+            <a href="lugar.htm"><li>Lugar</li></a>
+            <a href="ritual.htm"><li>Ritual</li></a>
+            <a href="galeria.htm"><li>Galería</li></a>
+          </ul>
+    </nav>
+
+
+<div align=center>
+  <div class="container">
+    <section>
+      <p>Mystika III - <strong>2 de Marzo 2018</strong><br>
+      Una vez más nos encontramos alrededor de las grandes fogatas: cuerpos y almas, de este lado y del otro. Para juntos alzar el velo, abrir un portal de comunicacion interdimensional y así acelerar el proyecto de sanación global.
+      <br>Nuestra madre nos llama
+      <br>el universo observa</p>
+
+      <button class="accordion">¿Que es Mystika?</button>
+        <div class="panel">
+          <img class="pane" src="img/shmira.jpg" alt="fyah">
+          <p class="pane">Mystika es un encuentro/ campamento/ convivio de índole esotérica, basado en el poder de compartir como la alternativa superior al modelo economico actual.<br><br> Todo se hace sin dinero de por medio (entrada libre). <br><br>Se trata de participación y cooperación: gestión colectiva de nuestros espacios, de nuestros recursos y nuestras maneras de convivir.</p>
+          <p class="pane">De la misma manera que se comparte la comida se intenciona compartir conocimientos espirituales y/ó esotéricos, así como tambien habilidades de sobrevivencia, montañismo, activismo, defensa personal, y permacultura.</p>
+          <img src="img/jicara.jpg" alt="fyah" class="pane">
+          <p class="pane">Este encuentro se caracteriza por su ya histórica sopa de vegetales, importante que sean solo ingredientes veganos para que absolutamente todes puedan comer. Debemos ser inclusivos en todo lo que hacemos</p>
+          <p class="pane">Todes traen un poco de vegetales y terminamos con suficiente comida para varios dias de campamento!!</p>
+          <img src="img/moncha3.jpg" alt="fyah" class="pane">
+        </div>
+        <button class="accordion">¿Que debo llevar?</button>
+          <div class="panel">
+            <h3> Lo Primordial: (a huevo)</h3>
+            <ul>
+              <li><p class="pane">Tienda de Acampar</p></li>
+              <li><p class="pane">Abrigo</p></li>
+              <li><p class="pane">Comida + Vegetales pa la sopa</p></li>
+              <li><p class="pane">Cobija / Sleeping bag</p></li>
+              <li><p class="pane">Herramienta para picar leña</p></li>
+              <li><p class="pane">Papel higienico</p></li>
+              <li><p class="pane">Plato y Cuchara (sopa)</p></li>
+
+            </ul>
+            <h3> Se Recomienda:</h3>
+            <ul>
+              <li><p class="pane">Instrumento Musical</p></li>
+              <li><p class="pane">Tambores</p></li>
+              <li><p class="pane">Poi u otros juguetes de fuego</p></li>
+              <li><p class="pane">Foco</p></li>
+              <li><p class="pane"> Botella de Agua</p></li>
+            </ul>
+          </div>
+        <button class="accordion">Actividades</button>
+          <div class="panel">
+            <ul>
+              <li><p class="pane">Asentamiento y decoracion del campamento</p></li>
+              <li><p class="pane"></p></li>
+              <li><p class="pane"></p></li>
+              <li><p class="pane"></p></li>
+            </ul>
+
+          </div>
+
+
+    </section>
+  </div>
+</div>
+
+<div hidden class="footer">
+  <p><a class="link" href="Mystika.apk" style="font-size:120%"> Descargar App</a>mystika@tutamail.com</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</body>
+</html>
