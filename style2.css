@@ -2,6 +2,7 @@
   font-family: libmono;
   src: url(fonts/libmono.ttf);
 }
+
 body{
   margin: 0;
   padding: 0;
@@ -14,13 +15,56 @@ body{
   background-attachment: fixed;
   background-position:center;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 header {
   max-width: 100%;
   color: black;
   text-align: center;
   line-height: 0.9em;
 }
-
 
 p.pane{
   color:#9EDA2F
@@ -104,11 +148,6 @@ section{
 h2 {
   font-size: 110%
 }
-
-h1, h3, h4{
-  color:#4485F5
-}
-
 .column1 {
     float: left;
     padding: 10px;
@@ -160,7 +199,7 @@ div.panel {
 }
 
 .container{
-  max-width:800px;
+  max-width:1200px;
 }
 
 .footer {
@@ -173,22 +212,6 @@ div.panel {
    background-color: #000;
    background-color:rgb(0,0,0,0.7);
    text-align: left;
-}
-
-table{
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 90%;
-}
-
-td, th{
-      border: 1px solid #99F902;
-      text-align: left;
-      padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: ;
 }
 
 @media screen and (max-width: 350px){
@@ -220,7 +243,5 @@ tr:nth-child(even) {
     height:auto;
     box-sizing: content-box;
 }
-table{
-  font-size: 80%;
-}
+
 }
