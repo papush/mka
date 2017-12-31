@@ -121,6 +121,7 @@ nav ul{
 nav ul li {
   display: inline-block;
   border-radius: 10px;
+  font-family: arial;
   background:black;
   padding: 5px;
   color:#cccccc;

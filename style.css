@@ -2,6 +2,11 @@
   font-family: libmono;
   src: url(fonts/libmono.ttf);
 }
+
+@font-face{
+  font-family: cour;
+  src: url(fonts/cour.ttf);
+}
 body{
   margin: 0;
   padding: 0;
@@ -25,6 +30,9 @@ header {
 p.pane{
   color:#9EDA2F
 }
+
+
+
 hr.cut{
   color:#99F902
 }
@@ -33,6 +41,18 @@ img.pane{
   max-width:350px;
   height: auto;
   padding:5px
+}
+
+img.sigil{
+  border-radius: 14px;
+  padding:7px;
+
+}
+
+img.sigil:hover{
+  background-color: #000;
+  background-color:rgb(0,0,0,0.9);
+
 }
 
 a{
@@ -77,6 +97,7 @@ nav ul{
 nav ul li {
   display: inline-block;
   border-radius: 10px;
+  font-family: arial;
   background:black;
   padding: 5px;
   color:#cccccc;
@@ -91,6 +112,18 @@ nav ul li.active{
 }
 section{
   text-align: left;
+  width: auto;
+  padding: 10px;
+  color:#7E93B4;
+  background-color: #000;
+  background-color:rgb(0,0,0,0.7);
+  border: solid 1px #000;
+  border-radius:10px;
+  margin:0;
+}
+
+section.2{
+  text-align: center;
   width: auto;
   padding: 10px;
   color:#7E93B4;
@@ -141,7 +174,7 @@ button.accordion {
     border: 1px solid #797979;
     margin:5px;
     font-size: 23px;
-    font-family: courier;
+    font-family: cour;
     transition: 0.4s;
 }
 
