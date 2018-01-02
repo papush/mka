@@ -226,14 +226,15 @@ tr:nth-child(even) {
 
 div.lang{
   position: fixed;
-  left:5px;
-  right:auto;
-  bottom:0;
+  right:5px;
+  left:auto;
+  top:5px;
 }
 
 img.lang{
   max-width: 50px
 }
+
 
 @media screen and (max-width: 350px){
   .container{
