@@ -232,9 +232,13 @@ div.lang{
 }
 
 img.lang{
-  max-width: 50px
+  max-width: 50px;
+  text-shadow: 0 0 3px #7E93B4,0 0 3px #7E93B4
 }
 
+img.lang:hover{
+  ;
+}
 
 @media screen and (max-width: 350px){
   .container{

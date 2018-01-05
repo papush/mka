@@ -15,7 +15,6 @@
     <hr style="color:#99F902">
     <nav style="font-family:sans;font-size:130%">
         <ul>
-            <a href="index.htm"><li style="border-radius:15px;left:5px;">⛺</li></a>
             <a href="lugar.htm"><li>Lugar</li></a>
             <a href="ritual.htm"><li>Ritual</li></a>
             <a href="galeria.htm"><li>Galería</li></a>
@@ -32,6 +31,7 @@
           <li><p>La ventolera - Escazu</p></li>
           <li><p>Monte Redondo - Grecia</p></li>
         </ul>
+        <img alt="prueba" src="img/arrowdown.png" onclick="mapsSelector()">
         <p>Cuando se tome la decisión se enviará un comunicado por todos los medios posibles</p>
         <p>De la misma manera tendremos aqui la direccion y las coordenadas para poder llegar a traves de waze, google maps u otros servicios de geolocalizacion</p>
         <p style="color:#766F5F">Contacto: mystika@tutamail.com</p>
@@ -57,6 +57,17 @@ for (i = 0; i < acc.length; i++) {
             panel.style.display = "block";
         }
     }
+}
+
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("maps://maps.google.com/maps?daddr=10.120101,-84.283548&amp;ll=");
+
+else /* else use Google */
+    window.open("https://maps.google.com/maps?daddr=10.120101,-84.283548&amp;ll=");
 }
 </script>
 </body>
