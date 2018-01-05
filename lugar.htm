@@ -66,6 +66,11 @@ function mapsSelector() {
      (navigator.platform.indexOf("iPod") != -1))
     window.open("http://maps.apple.com/maps?daddr=10.120101,-84.283548&amp;ll=");
 
+if
+    ((navigator.platform.indexOf("WP7") != -1) ||
+    (screen.width >= 480 )!= -1)
+    window.open("http://maps.google.com/maps?daddr=10.120101,-84.283548&amp;ll=");
+
 else /* else use Google */
     window.open("geo:0,0?q=10.120101,-84.283548(Mystika III)");
 }
