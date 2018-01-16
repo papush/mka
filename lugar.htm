@@ -10,7 +10,7 @@
 <body>
 
     <header>
-      <a href="index.htm"><img src="img/avatar.png" alt=header width="300px" height="auto" style="margin:0"></a>
+      <a href="index.htm"><img class="header" src="img/avatar.png" alt=header width="300px" height="auto" style="margin:0"></a>
     </header>
     <hr style="color:#99F902">
     <nav style="font-family:sans;font-size:130%">
@@ -26,13 +26,10 @@
   <div class="container">
     <section>
       <h1>Lugar</h1>
-        <p>por el momento el lugar no se ha definido. Sin embargo existen varias opciones:</p>
-        <ul>
-          <li><p>La ventolera - Escazu</p></li>
-          <li><p>Monte Redondo - Grecia</p></li>
-        </ul>
-        <img alt="prueba" src="img/arrowdown.png" onclick="mapsSelector()">
+        <p>Por el momento el lugar está en proceso de ser escogido</p>
+        <img hidden alt="prueba" src="img/arrowdown.png" onclick="mapsSelector()">
         <p>Cuando se tome la decisión se enviará un comunicado por todos los medios posibles</p>
+        <p>Si usted quiere recibir un comunicado sobre el lugar y otra información importante por favor enviar su informacion con el siguiente formulario:</p>
         <p>De la misma manera tendremos aqui la direccion y las coordenadas para poder llegar a traves de waze, google maps u otros servicios de geolocalizacion</p>
         <p style="color:#766F5F">Contacto: mystika@tutamail.com</p>
 
@@ -42,6 +39,9 @@
 
 <div hidden class="footer">
   <p><a class="link" href="Mystika.apk" style="font-size:120%"> Descargar App</a>mystika@tutamail.com</p>
+</div>
+<div class="lang">
+  <a href="en/index.htm"><img src="img/eng3.png" alt=language class="lang"></a>
 </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -72,7 +72,7 @@ function mapsSelector() {
     {
       window.open("geo:0,0?q=10.120101,-84.283548(Mystika III)");
     }
-  
+
   else /* else use Google */
     window.open("http://maps.google.com/maps?daddr=10.120101,-84.283548&amp;ll=");
 
