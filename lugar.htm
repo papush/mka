@@ -29,8 +29,18 @@
         <p>Por el momento el lugar está en proceso de ser escogido</p>
         <img hidden alt="prueba" src="img/arrowdown.png" onclick="mapsSelector()">
         <p>Cuando se tome la decisión se enviará un comunicado por todos los medios posibles</p>
-        <p>Si usted quiere recibir un comunicado sobre el lugar y otra información importante por favor enviar su informacion con el siguiente formulario:</p>
-        <p>De la misma manera tendremos aqui la direccion y las coordenadas para poder llegar a traves de waze, google maps u otros servicios de geolocalizacion</p>
+        <p>Si usted quiere recibir un comunicado sobre el lugar y otra información importante por favor enviar su información de contacto con el siguiente formulario:</p>
+        <div class="form">
+          <form action="https://formspree.io/mystika@tutamail.com"
+                method="POST">
+              <label hidden for="cel">Celular:</label>
+              <input id="cel" type="text"  name="phone" placeholder="Celular">
+              <label hidden for="email">E-mail:</label>
+              <input id="email" type="email" name="email" placeholder="Correo electronico">
+              <input type="submit" value="Enviar">
+          </form>
+        </div>
+        <p>De la misma manera tendremos aqui la dirección y las coordenadas para poder llegar a traves de waze, google maps u otros servicios de geolocalizacion</p>
         <p style="color:#766F5F">Contacto: mystika@tutamail.com</p>
 
     </section>
