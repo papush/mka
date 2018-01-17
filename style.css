@@ -52,13 +52,10 @@ img.pane{
 img.sigil{
   border-radius: 14px;
   padding:7px;
-
 }
 
 img.sigil:hover{
-  background-color: #000;
-  background-color:rgb(0,0,0,0.9);
-
+  background-color: #230121;
 }
 
 a{
