@@ -21,16 +21,56 @@
           </ul>
     </nav>
 
-
 <div align=center>
   <div class="container">
     <section>
-      <h1>Lugar</h1>
-        <p>Por el momento el lugar está en proceso de ser escogido</p>
-        <img hidden alt="prueba" src="img/arrowdown.png" onclick="mapsSelector()">
-        <p>Cuando se tome la decisión se enviará un comunicado por todos los medios posibles</p>
-        <p>Si usted quiere recibir un comunicado sobre el lugar y otra información importante por favor enviar su información de contacto con el siguiente formulario:</p>
-        <div class="form">
+      <h1>Lugar:</h1>
+	    <h3 style="color:#99F902">"La Ventolera"- Escazú</h3>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/lug/01.jpg" style="width:100%">
+            <div class="text">vacas!</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/lug/02.jpg" style="width:100%">
+            <div class="text">área del ritual</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/lug/03.jpg" style="width:100%">
+            <div class="text">la loma</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/lug/04.jpg" style="width:100%">
+            <div class="text">área del campamento</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/lug/05.jpg" style="width:100%">
+            <div class="text">vista</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/lug/06.jpg" style="width:100%">
+            <div class="text">pasadiso al campamento</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <br>
+
+        </div>
+
+        <p>Arriba en las montañas de Bebedero (Escazú) existe un lugar mágico llamado "La Ventolera". De noche, desde la loma se puede ver todo el valle central iluminado por una extraña red de luz artificial.</p>
+        <p>Escondidos en el bosque asentaremos el campamento de Mystika III, entre los arboles, quienes nos protegen del viento y de cualquier posible lluvia.</p>
+        <p></p>
+        <img alt="prueba" src="img/googlemaps.png" style="width:90px" onclick="mapsSelector()">
+        <h3>*Pronto más información sobre como llegar!*</h3>
+
+
+        <div hidden class="form">
           <form action="https://formspree.io/mystika@tutamail.com"
                 method="POST">
               <label hidden for="cel">Celular:</label>
@@ -40,7 +80,8 @@
               <input type="submit" value="Enviar">
           </form>
         </div>
-        <p>De la misma manera tendremos aqui la dirección y las coordenadas para poder llegar a traves de waze, google maps u otros servicios de geolocalizacion</p>
+
+
         <p style="color:#766F5F">Contacto: mystika@tutamail.com</p>
 
     </section>
@@ -68,25 +109,52 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
-
+9.897085,-84.159020
 function mapsSelector() {
   if /* if we're on iOS, open in Apple Maps */
     ((navigator.platform.indexOf("iPhone") != -1) ||
      (navigator.platform.indexOf("iPad") != -1) ||
      (navigator.platform.indexOf("iPod") != -1))
-    window.open("http://maps.apple.com/maps?daddr=10.120101,-84.283548&amp;ll=");
+    window.open("http://maps.apple.com/maps?daddr=9.897085,-84.159020&amp;ll=");
 
   var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
 
     if (isAndroid)
     {
-      window.open("geo:0,0?q=10.120101,-84.283548(Mystika III)");
+      window.open("geo:0,0?q=9.897085,-84.159020(Mystika III)");
     }
 
   else /* else use Google */
-    window.open("http://maps.google.com/maps?daddr=10.120101,-84.283548&amp;ll=");
-
+    window.open("http://maps.google.com/maps?daddr=9.897085,-84.159020&amp;ll=");
 }
+/*slider*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 </script>
 </body>
 </html>
