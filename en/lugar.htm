@@ -26,19 +26,61 @@
   <div class="container">
     <section>
       <h1>Place</h1>
-        <p>At this moment the location of the gathering is being collectively decided.</p>
-        <p>Write yourself down in the following form to get updates about the location and other important info prior to the gathering</p>
+      <h3 style="color:#99F902">"La Ventolera"- Escazú</h3>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="../img/lug/01.jpg" style="width:100%">
+            <div class="text">cows!</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../img/lug/02.jpg" style="width:100%">
+            <div class="text">ritual area</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../img/lug/03.jpg" style="width:100%">
+            <div class="text">the hill</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../img/lug/04.jpg" style="width:100%">
+            <div class="text">camp area</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../img/lug/05.jpg" style="width:100%">
+            <div class="text">the view!</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../img/lug/06.jpg" style="width:100%">
+            <div class="text">walkway to camp area</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <br>
+
+        </div>
+
+        <p>Up in the mountains of Bebedero (Escazú) there's a magical place called "la ventolera". At night, from the top of the hill the whole central valley can be appreciated with it's peculiar glowing web of artificial light.</p>
+        <p>Sheltered inside the woods we will set the camp, in between trees who protect us from the wind and any posibility of rain.</p>
+        <p></p>
+        <img alt="prueba" src="../img/googlemaps.png" style="width:90px" onclick="mapsSelector()">
+        <h3>*Soon more info on how to get there*</h3>
+        <hr>
+        <h4>We'll keep you posted:</h4>
         <div class="form">
           <form action="https://formspree.io/mystika@tutamail.com"
                 method="POST">
-              <label hidden for="cel">Celular:</label>
-              <input id="cel" type="text"  name="phone" placeholder="Cellphone Number">
+              <label hidden for="cel">Cellphone:</label>
+              <input id="cel" type="text"  name="phone" placeholder="Cellphone">
               <label hidden for="email">E-mail:</label>
               <input id="email" type="email" name="email" placeholder="E-mail">
-              <input type="submit" value="Submit">
+              <input type="submit" value="submit">
           </form>
         </div>
-        <p>INFO about directions, coordinates, map links and transportation will be available in this section as soon as the location is chosen</p>
         <p style="color:#766F5F">Contact: mystika@tutamail.com</p>
 
     </section>
@@ -67,6 +109,34 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+/*slider*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 </script>
 </body>
 </html>
