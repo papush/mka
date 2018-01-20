@@ -109,6 +109,23 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.897085,-84.159020&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.897085,-84.159020(Mystika III)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.897085,-84.159020&amp;ll=");
+}
 /*slider*/
 var slideIndex = 1;
 showSlides(slideIndex);
