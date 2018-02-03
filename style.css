@@ -37,8 +37,6 @@ p.pane{
   color:#9EDA2F
 }
 
-
-
 hr.cut{
   color:#99F902
 }
@@ -68,26 +66,27 @@ a.link{
   color:#99F902;
 }
 
+a.link3 {
+  display: inline-block;
+  border-radius: 10px;
+  font-family: arial;
+  background:black;
+  padding: 10px;
+  color:#cccccc;
+  border: 1px solid white;
+}
+a.link3:hover{
+  background-color: #212121;
+  color:#99F902;
+  border: 1px solid #99F902;
+}
+
 a.link2{
   text-decoration: none;
   color: #1A0DB2;
   font-family: monospace;
 }
 
-a.dif {
-  text-decoration: none;
-  padding: 3px;
-  color: #000;
-  background-color: #DFDFDF;
-  text-align: center;
-  outline: 1px solid #797979;
-}
-
-a.dif.active, a.dif:hover{
-  background-color: rgb(98, 255, 121);
-  color: #000;
-
-}
 
 nav ul{
   background:;
